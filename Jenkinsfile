@@ -17,7 +17,7 @@ pipeline {
                 echo "sonar analysis"
              }
         }
-         stages("vulnarability scaninng"){
+         stages ("vulnarability scaninng"){
             when {
                 branch 'develop'
             }
