@@ -41,7 +41,7 @@ pipeline {
                 echo "test deploy"
             }
         }
-        stages("prod deploy"){
+         stages("prod deploy"){
             when{
                 branch 'main'
             }
