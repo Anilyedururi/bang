@@ -17,7 +17,7 @@ pipeline {
                 echo "sonar analysis"
              }
         }
-         stages("vulnarability scaninng"){
+         stage("vulnarability scaninng"){
             when {
                 branch 'develop'
             }
@@ -25,7 +25,7 @@ pipeline {
                 echo "vulnarability scanning"
              }
         }
-         stages("dev deploy") {
+         stage("dev deploy") {
             when {
                 branch 'develop'
             }
@@ -33,7 +33,7 @@ pipeline {
                 echo "dev deploy"
              }
         }
-         stages("test deploy") {
+         stage("test deploy") {
             when {
                 branch 'test'
             }
@@ -41,7 +41,7 @@ pipeline {
                 echo "test deploy"
             }
         }
-         stages("prod deploy"){
+         stage("prod deploy"){
             when{
                 branch 'main'
             }
