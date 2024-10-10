@@ -25,7 +25,7 @@ pipeline {
                 echo "vulnarability scanning"
              }
         }
-         stages ("dev deploy") {
+         stages("dev deploy") {
             when {
                 branch 'develop'
             }
@@ -33,7 +33,7 @@ pipeline {
                 echo "dev deploy"
              }
         }
-         stages ("test deploy") {
+         stages("test deploy") {
             when {
                 branch 'test'
             }
@@ -41,7 +41,7 @@ pipeline {
                 echo "test deploy"
             }
         }
-        stages ("prod deploy"){
+        stages("prod deploy"){
             when{
                 branch 'main'
             }
